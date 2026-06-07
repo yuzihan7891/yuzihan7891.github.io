@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="余万海个人主页 - 人工智能科学家、教育家、科技创业者">
+    <meta name="theme-color" content="#2c3e66">
+    <title>余万海 | 大滚木 · 7891</title>
+    <!-- Font Awesome 6 (免费图标库) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Marked.js Markdown 解析库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f5f7fc 0%, #eef2f8 100%);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #1e2a3e;
+            padding: 2rem 1rem;
+        }
+
+        /* 自定义容器 - 卡片式设计 */
+        .page-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            backdrop-filter: blur(0px);
+            transition: all 0.2s ease;
+        }
+
+        /* 装饰性渐变顶部条 */
+        .hero-accent {
+            height: 8px;
+            background: linear-gradient(90deg, #2c3e66, #4a7c9c, #6ba3c7, #2c3e66);
+            background-size: 200% auto;
+            animation: shimmer 3s ease infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Markdown 内容区域样式 (优雅阅读体验) */
+        .markdown-body {
+            padding: 2.5rem 2.8rem;
+            background: white;
+            transition: padding 0.2s;
+        }
+
+        /* 针对移动端舒适内边距 */
+        @media (max-width: 680px) {
+            .markdown-body {
+                padding: 1.8rem 1.5rem;
+            }
+        }
+
+        /* === GitHub 风格 Markdown 增强 === */
+        .markdown-body h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter
